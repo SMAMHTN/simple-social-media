@@ -8,13 +8,13 @@ import Users from './pages/Users';
 function App() {
   return (
     <Routes>
-      <Route path='simple-social-media/' element={<Navigate to={'/posts'} replace />} />
-      <Route path='simple-social-media/posts' element={<Outlet />}>
+      <Route path='/' element={<Navigate to={'/posts'} replace />} />
+      <Route path='posts' element={<Outlet />}>
         <Route path=':postId' element={<PostDetail />} />
         <Route index element={<Posts />} />
       </Route>
-      <Route path='simple-social-media/users' element={<Users />} />
-      <Route path='simple-social-media/about' element={<About />} />
+      <Route path='users' element={<Users />} />
+      <Route path='about' element={<About />} />
     </Routes>
   );
 }
