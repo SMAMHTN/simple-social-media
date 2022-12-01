@@ -8,7 +8,7 @@ import Users from './pages/Users';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Navigate to={'posts'} replace />} />
+      <Route path='/' element={<Navigate to={'/posts'} replace />} />
       <Route path='posts' element={<Outlet />}>
         <Route path=':postId' element={<PostDetail />} />
         <Route index element={<Posts />} />
