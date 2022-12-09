@@ -95,6 +95,7 @@ const Users = () => {
                     <CardUser
                       key={`${u.name.replace(/ /g, '-')}-${u.id}`}
                       user={u}
+                      setUsers={setUsers}
                     />
                   );
                 })

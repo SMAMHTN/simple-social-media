@@ -16,3 +16,7 @@ export const getUsers = async (controller) => {
 export const addUser = async (name, email) => {
   return await axios.post('/users', { name, email });
 };
+
+export const deleteUser = (userId) => {
+  return axios.delete(`users/${userId}`)
+}
